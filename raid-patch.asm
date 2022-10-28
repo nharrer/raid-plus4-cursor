@@ -86,17 +86,17 @@ copy:   lda ($da),Y
 block2code:
         lda #$df
         jsr block3
-        and #08     ; cursour up
+        and #08     ; cursor up
         sta $1c46   ; up
         txa
-        and #01     ; cursour down
+        and #01     ; cursor down
         sta $1c47   ; down
         lda #$bf
         jsr block3
-        and #01     ; cursour left
+        and #01     ; cursor left
         sta $1c48   ; left
         txa
-        and #08     ; cursour right
+        and #08     ; cursor right
         sta $1c49   ; right
         lda #$fd
         jsr block3
